@@ -1,0 +1,29 @@
+GET http://localhost:3000/test
+
+###
+
+POST http://localhost:3000/owner-api/create-owner
+Content-Type: application/json
+
+{
+    "owner_id": 1,
+    "owner_name": "akash",
+    "channel": {
+        "channel_id": 1,
+        "channel_name": "youtube channel"
+    },
+    "videos":  [
+        {
+            "video_id": 1,
+            "video_title": "first video"
+        },
+        {
+            "video_id": 2,
+            "video_title": "second video"
+        }
+    ]
+}
+
+###
+
+GET http://localhost:3000/owner-api/test
