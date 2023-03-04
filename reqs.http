@@ -23,7 +23,7 @@ Content-Type: application/json
         }
     ]
 }
-
+ 
 ###
 
-GET http://localhost:3000/owner-api/test
+GET http://localhost:3000/owner-api/get-users
