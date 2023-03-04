@@ -6,11 +6,11 @@ const ownerApi = express.Router();
 // body parser middleware
 ownerApi.use(express.json());
 
-const { createOwner, test , getUsers} = require("../controllers/owner.controller");
+const { createOwner, test ,  getOwners} = require("../controllers/owner.controller");
 
 ownerApi.post("/create-owner", createOwner);
 ownerApi.get("/test", test);
-ownerApi.get("/get-users", getUsers);
+ownerApi.get("/get-owner", getOwners);
 
 
 module.exports = ownerApi;

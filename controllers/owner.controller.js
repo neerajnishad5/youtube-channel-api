@@ -51,7 +51,7 @@ const createOwner = expressAsyncHandler(async (req, res) => {
   res.send({ msg: "User created!", payload: owner });
 });
 
-const getUsers = expressAsyncHandler(async (req, res) => {
+const getOwners = expressAsyncHandler(async (req, res) => {
   let users = await Owner.findAll({
     include: [
       {
@@ -75,6 +75,6 @@ sequelize.sync({ force: true });
 
 module.exports = {
   createOwner,
-  getUsers,
+  getOwners,
   test,
 };
